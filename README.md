@@ -1,6 +1,7 @@
 # Next.js + Vercel 開発環境構築ガイド
 
 このガイドでは、Next.js アプリケーションを作成し、Vercel にデプロイするまでの手順を説明します。
+[ここ](https://craude-app.vercel.app/)デプロイされる。
 
 ## 前提条件
 
@@ -15,7 +16,6 @@
 
 ```bash
 node --version
-npm --version
 ```
 
 ### 2. Next.js プロジェクトの作成
@@ -39,8 +39,6 @@ cd my-nextjs-app
 
 ```bash
 npm run dev
-# または
-yarn dev
 ```
 
 ブラウザで `http://localhost:3000` にアクセスして動作確認
@@ -112,15 +110,12 @@ git checkout -b feature/new-feature
 # 開発サーバーを起動
 npm run dev
 
-# コンポーネントやページを作成・編集
-# app/ディレクトリ内でファイルを編集
 ```
 
 ### 2. Claude の JSX コードを統合
 
-1. `app/page.tsx`を編集して Claude が生成した JSX を貼り付け
-2. 必要に応じて`components/`ディレクトリにコンポーネントを分割
-3. `http://localhost:3000`で動作確認
+1. `app/xxxx/page.tsx`を作成して Claude が生成した JSX を貼り付け
+2. `http://localhost:3000`で動作確認
 
 ### 3. デプロイ
 
